@@ -3,7 +3,8 @@ services:
     name: calibre-web
     env: docker
     plan: free
-    autoDeploy: true    
+    dockerfilePath: ./Dockerfile
+    autoDeploy: true
     envVars:
       - key: GOOGLE_DRIVE_ENABLED
         value: "true"
